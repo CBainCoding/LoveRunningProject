@@ -48,7 +48,7 @@ h1 {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -81,6 +81,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
+
 /* Main content */
 main {
     background-color: yellow;
@@ -90,15 +91,25 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: green;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display:flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 
 /* Media query: Tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* header */
-    nav{
+    nav {
         display: block;
         position: relative;
         box-shadow: none;
@@ -107,10 +118,10 @@ footer {
     }
 
     #menu {
-        display:flex;
+        display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -122,17 +133,18 @@ footer {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
-       }
+    }
 
-       /* Main content */
-       main {
+    /* Main content */
+    main {
         /* Push main content down to accomodate larger header */
         margin-top: 79px;
-       }
+    }
 }
 
 /* Media query: Laptops and larger (992px and up) */
 @media screen and (min-width: 768px) {
+
     /* header */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
